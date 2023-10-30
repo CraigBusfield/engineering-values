@@ -28,28 +28,28 @@
 				</section>
 				<section data-auto-animate>
 					<div data-id="title" class="title">We Move</div>
-					<div data-id="subtitle-0" class="subtitle">Forward</div>
-					<div class="body fragment">We don't dwell, we take learnings and move onwards</div>
+					<div data-id="subtitle-0" class="subtitle animate__zoomIn">Forward</div>
+					<div class="body fragment animate__fadeInUp">We don't dwell, we take learnings and move onwards</div>
 				</section>
 				<section data-auto-animate>
 					<div data-id="title" class="title">We Move</div>
-					<div data-id="subtitle-1" class="subtitle">Together</div>
-					<div class="body fragment">We have each other's backs, we have no desire for heroes or blame</div>
+					<div data-id="subtitle-1" class="subtitle animate__zoomIn">Together</div>
+					<div class="body fragment animate__fadeInUp">We have each other's backs, we have no desire for heroes or blame</div>
 				</section>
 				<section data-auto-animate>
 					<div data-id="title" class="title">We Move</div>
-					<div data-id="subtitle-2" class="subtitle">Boldly</div>
-					<div class="body fragment">We are inquisitive and we avoid the path of least resistance</div>
+					<div data-id="subtitle-2" class="subtitle animate__zoomIn">Boldly</div>
+					<div class="body fragment animate__fadeInUp">We are inquisitive and we avoid the path of least resistance</div>
 				</section>
 				<section data-auto-animate>
 					<div data-id="title" class="title">We Move</div>
-					<div data-id="subtitle-3" class="subtitle">Predictably</div>
-					<div class="body fragment">We work to our goals and we take great pride in achieving them</div>
+					<div data-id="subtitle-3" class="subtitle animate__zoomIn">Predictably</div>
+					<div class="body fragment animate__fadeInUp">We work to our goals and we take great pride in achieving them</div>
 				</section>
 				<section data-auto-animate>
 					<div data-id="title" class="title">We Move</div>
-					<div data-id="subtitle-4" class="subtitle">Decisively</div>
-					<div class="body fragment">We commit to decisions and are accountable for their completion</div>
+					<div data-id="subtitle-4" class="subtitle animate__zoomIn">Decisively</div>
+					<div class="body fragment animate__fadeInUp">We commit to decisions and are accountable for their completion</div>
 				</section>
 			</div>
 		</div>
@@ -58,15 +58,18 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="node_modules/reveal.js-appearance/plugin/appearance/appearance.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				appearance: {
+    				delay: 0,
+				},		
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Appearance ]
 			});
 		</script>
 	</body>
