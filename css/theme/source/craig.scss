@@ -1,0 +1,76 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/manrope/manrope.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #040138;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 42px;
+$mainFont: 'Manrope', Helvetica, sans-serif;
+$headingFont: 'Manrope', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: rgba( $linkColor, 0.75 );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.logo {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.title {
+    font-size: 128px;
+    line-height: 1;
+    font-weight: bold;
+    color: #00bfcd;
+}
+
+.subtitle {
+    font-size: 96px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.body {
+    margin-top: 30px;
+    color: #fb8e34;
+}
+
+.reveal img.vs-logo {
+    max-height:50px;
+    width: auto;  
+    margin: 0; 
+}
