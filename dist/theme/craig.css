@@ -360,7 +360,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .logo {
   font-weight: bold;
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 .title {
@@ -385,4 +385,32 @@ section.has-light-background, section.has-light-background h1, section.has-light
   max-height: 50px;
   width: auto;
   margin: 0;
+  margin-bottom: 60px;
+}
+
+.core-values {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.core-value {
+  width: 50%;
+  margin-bottom: 40px;
+  color: #00bfcd;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.core-value-subtitle {
+  font-size: 24px;
+  color: #fb8e34;
+  font-weight: 400;
+}
+
+.body-core-value {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 32px;
 }
